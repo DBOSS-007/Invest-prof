@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Investment Platform — Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <span class="brand">Investment Platform</span>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Plans</a>
+      <a href="#">Invest</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Profile</h1>
+
+    <section>
+      <h2>Profile Completion</h2>
+      <p>Complete your profile to unlock all account features.</p>
+      <progress value="100" max="100"></progress>
+      <strong>100%</strong>
+    </section>
+
+    <section>
+      <h2>Personal Information</h2>
+      <div><label>First Name</label><input value="John" readonly>
+           <label>Last Name</label><input value="Okpe" readonly></div>
+      <div><label>Middle Name</label><input value="oloche">
+           <label>Email</label><input value="user@example.com" readonly></div>
+      <div><label>Phone Number</label><input value="+234 800 000 0000" readonly>
+           <label>Date of Birth</label><input type="date" value="1990-08-06"></div>
+      <div><label>Gender</label>
+           <select><option>Male</option><option>Female</option></select>
+           <label>Marital Status</label>
+           <select><option>Married</option><option>Single</option></select>
+           <label>Postal Code</label><input></div>
+
+      <h2>Address</h2>
+      <div><label>Country</label><input value="Nigeria">
+           <label>State</label><input value="Benue">
+           <label>City</label><input value="Otukpo"></div>
+      <div><label>Address</label><textarea>Sample address</textarea></div>
+      <button type="submit">Save Profile</button>
+    </section>
+
+    <section>
+      <h2>Account Security &amp; Verification</h2>
+      <div class="security-row">
+        <div><h3>Email Address</h3><span class="checking">Checking...</span></div>
+      </div>
+      <div class="security-row">
+        <div><h3>Phone Number</h3><span class="checking">Checking...</span></div>
+      </div>
+      <div class="security-row">
+        <div><h3>Two-Factor Authentication</h3><p>Add an additional layer of security to your account.</p></div>
+        <div><span class="badge">Enabled</span> <button class="danger">Disable 2FA</button></div>
+      </div>
+    </section>
+
+    <section class="verified-card">
+      <h2>Identity Verification</h2>
+      <span class="badge">Verified</span>
+      <h3>Identity successfully verified</h3>
+      <p>Your account is fully verified and you can access all features that require identity verification.</p>
+      <dl>
+        <dt>Document Type</dt><dd>Passport</dd>
+        <dt>Document Number</dt><dd>X0000000</dd>
+        <dt>Verified On</dt><dd>11 August 2026</dd>
+      </dl>
+      <button>View Verification Details</button>
+    </section>
+
+    <section>
+      <h2>Bank Accounts</h2>
+      <button class="btn-primary">+ Add Bank Account</button>
+      <table>
+        <thead><tr><th>Bank</th><th>Account Number</th><th>Account Name</th><th>Default</th><th>Actions</th></tr></thead>
+        <tbody>
+          <tr><td>Fidelity Bank</td><td>0000000001</td><td>ACCOUNT HOLDER ONE</td><td class="default-yes">Yes</td>
+              <td><button>Edit</button><button class="danger">Delete</button></td></tr>
+          <tr><td>First Bank PLC</td><td>0000000002</td><td>ACCOUNT HOLDER TWO</td><td>No</td>
+              <td><button>Set Default</button><button>Edit</button><button class="danger">Delete</button></td></tr>
+          <tr><td>Access Bank</td><td>0000000003</td><td>ACCOUNT HOLDER THREE</td><td>No</td>
+              <td><button>Set Default</button><button>Edit</button><button class="danger">Delete</button></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
